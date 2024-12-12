@@ -11,24 +11,123 @@
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/responsive.css" />
   <link rel="stylesheet" href="css/main.css" />
-  <title>Document</title>
+  <title>Default Website (HTML) Template</title>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <menu>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-      </menu>
-    </nav>
-  </header>
-  <main></main>
-  <footer>
-    <nav></nav>
-  </footer>
+  <header class="header" role="banner">
+        <div class="container">
+            <a href="/" class="logo" aria-label="Home">
+                <img src="logo.png" alt="Site Logo" class="logo__image" />
+            </a>
+            <nav class="navigation" role="navigation" aria-label="Main Menu">
+                <button class="navigation__toggle" aria-expanded="false" aria-controls="menu" id="menu-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    ☰
+                </button>
+                <ul class="navigation__menu" id="menu">
+                    <li class="navigation__item">
+                        <a href="/" class="navigation__link">Home</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="/about" class="navigation__link">About</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="/services" class="navigation__link">Services</a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="/contact" class="navigation__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main" role="main">
+        <section class="hero">
+            <div class="container hero__container">
+                <h1 class="hero__title">Welcome to [Your Site]</h1>
+                <p class="hero__description">
+                    Discover [what your site offers] and explore [main offerings or tagline].
+                </p>
+                <a href="/get-started" class="hero__cta">Get Started</a>
+            </div>
+        </section>
+
+        <section class="content container">
+            <div class="content__main">
+                <h2 class="content__title">Main Content</h2>
+                <p class="content__text">
+                    This is the main area where the primary content goes. Use this space to
+                    introduce your core offerings, latest articles, or other important information.
+                </p>
+            </div>
+
+            <aside class="sidebar" role="complementary" aria-label="Sidebar">
+                <h3 class="sidebar__title">Related Links</h3>
+                <ul class="sidebar__list">
+                    <li class="sidebar__item">
+                        <a href="/link1" class="sidebar__link">Link 1</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="/link2" class="sidebar__link">Link 2</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="/link3" class="sidebar__link">Link 3</a>
+                    </li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+    <footer class="footer" role="contentinfo">
+        <div class="container footer__container">
+            <div class="footer__branding">
+                <a href="/" class="footer__logo" aria-label="Home">
+                    <img src="logo-footer.png" alt="Site Logo" class="footer__logo-image" />
+                </a>
+                <p class="footer__description">
+                    Your go-to source for [brief description of your site or business].
+                </p>
+            </div>
+            <nav class="footer__navigation" aria-label="Footer Menu">
+                <ul class="footer__menu">
+                    <li class="footer__item">
+                        <a href="/" class="footer__link">Home</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="/about" class="footer__link">About</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="/services" class="footer__link">Services</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="/contact" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__legal">
+                <p class="footer__copyright">
+                    &copy; 2024 Your Company. All rights reserved.
+                </p>
+                <ul class="footer__social">
+                    <li class="footer__social-item">
+                        <a href="https://twitter.com" class="footer__social-link" aria-label="Twitter">
+                            <img src="twitter-icon.png" alt="Twitter" />
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="https://facebook.com" class="footer__social-link" aria-label="Facebook">
+                            <img src="facebook-icon.png" alt="Facebook" />
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="https://linkedin.com" class="footer__social-link" aria-label="LinkedIn">
+                            <img src="linkedin-icon.png" alt="LinkedIn" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
   <script src="js/script.js"></script>
 </body>
 
