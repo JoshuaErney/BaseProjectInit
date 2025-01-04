@@ -1,37 +1,104 @@
-@import "modern-normalize";
+/* Reset and Normalize CSS */
+/* Based on Meyerweb Reset, Modern Reset, and Additional Best Practices */
 
-:root {
-  line-height: 1.5;
+/* 1. Apply a consistent box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-figure,
-p,
-ol,
-ul {
+/* 2. Remove default margins */
+* {
   margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-ol[role="list"],
-ul[role="list"] {
-  list-style: none;
-  padding-inline: 0;
+/* 3. Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-size: inherit;
-  font-weight: inherit;
+/* 4. Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-size: 100%;
+  font: inherit;
+  -webkit-font-smoothing: antialiased;
 }
 
-img {
+/* 5. HTML5 display role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
   display: block;
-  max-inline-size: 100%;
+}
+
+/* 6. Remove list styles on default and role-based lists */
+ol, ul, ul[role='list'], ol[role='list'] {
+  list-style: none;
+}
+
+/* 7. Reset blockquotes and quotes */
+blockquote, q {
+  quotes: none;
+}
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: '';
+  content: none;
+}
+
+/* 8. Reset tables */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 9. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 10. Ensure text elements wrap properly */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+h1, h2, h3, h4 {
+  text-wrap: balance;
+}
+
+/* 11. Set shorter line heights for headings and interactive elements */
+h1, h2, h3, h4, button, input, label {
+  line-height: 1.1;
+}
+
+/* 12. Ensure accessibility for forms */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 13. Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* 14. Improve default styles for anchor elements */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* 15. Create a root stacking context */
+#root, #__next {
+  isolation: isolate;
+}
+
+/* 16. Ensure anchored elements have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
 }
