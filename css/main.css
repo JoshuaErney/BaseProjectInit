@@ -1,0 +1,103 @@
+/* ====================================================================
+   MAIN.CSS - STRUCTURE TEMPLATE
+   Description: This file provides a logical framework for styling
+   any website, with clearly defined sections for organization.
+   ==================================================================== */
+
+/* ==========================
+   2. GLOBAL STYLES (BODY & ROOT ELEMENTS)
+   ========================== */
+
+body {
+  /* Styles for the website body */
+}
+
+/* ==========================
+   3. LAYOUT STRUCTURE
+   ========================== */
+
+/* ---- HEADER SECTION ---- */
+header {
+    /* Styles for the website header */
+}
+
+/* ---- NAVIGATION (PRIMARY NAVBAR) ---- */
+nav {
+    /* Styles for the main navigation menu */
+}
+
+/* ---- MAIN CONTENT AREA ---- */
+main {
+    /* Styles for the main content wrapper */
+}
+
+/* ---- SECTIONS WITHIN MAIN ---- */
+main section {
+    /* General styles for sections inside main */
+}
+
+/* ---- FOOTER SECTION ---- */
+footer {
+    /* Styles for the website footer */
+}
+
+/* ---- FOOTER NAVIGATION (OPTIONAL) ---- */
+footer nav {
+    /* Footer-specific navigation styles */
+}
+
+/* ==========================
+   4. TYPOGRAPHY (TEXT ELEMENTS)
+   ========================== */
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  /* Styles for headings */
+}
+
+/* Paragraphs */
+p {
+  /* Styles for paragraph text */
+}
+
+/* Links */
+a {
+  /* Styles for links */
+}
+
+/* Lists */
+ul, ol {
+  /* Styles for unordered and ordered lists */
+}
+
+li {
+    /* Styles for list items */
+}
+
+/* Icons */
+i {
+  /* Styles for font-based icons (e.g., FontAwesome) */
+}
+
+/* Images */
+img {
+  /* Styles for images */
+}
+
+/* ==========================
+   5. FORM ELEMENTS
+   ========================== */
+
+form {
+    /* Styles for form container */
+}
+
+input, textarea, select, button {
+    /* Base styling for form elements */
+}
+
+/* ==========================
+   6. UTILITIES & HELPERS
+   ========================== */
+
+/* Helper classes for spacing, alignment, visibility, etc. */
